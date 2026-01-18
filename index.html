@@ -97,7 +97,16 @@
     <main class="main">
 
         <!-- ========== HERO SECTION ========== -->
-        <section class="hero section" id="home" style="background-image: url('images/hero/hero_jersey.png');">
+        <section class="hero section" id="home">
+            <!-- Slideshow Background -->
+            <div class="hero__slideshow">
+                <div class="hero__slide active" style="background-image: url('images/hero/slideshow/slide-1.webp');">
+                </div>
+                <div class="hero__slide" style="background-image: url('images/hero/slideshow/slide-2.webp');"></div>
+                <div class="hero__slide" style="background-image: url('images/hero/slideshow/slide-3.webp');"></div>
+                <div class="hero__slide" style="background-image: url('images/hero/slideshow/slide-4.webp');"></div>
+            </div>
+
             <div class="hero__overlay"></div>
             <div class="hero__container container">
                 <div class="hero__content">
@@ -121,6 +130,14 @@
                 </div>
             </div>
 
+            <!-- Slideshow Navigation Dots -->
+            <div class="hero__dots">
+                <span class="hero__dot active" data-slide="0"></span>
+                <span class="hero__dot" data-slide="1"></span>
+                <span class="hero__dot" data-slide="2"></span>
+                <span class="hero__dot" data-slide="3"></span>
+            </div>
+
             <!-- Scroll Down Indicator -->
             <div class="hero__scroll">
                 <a href="#about" class="hero__scroll-link">
@@ -142,7 +159,7 @@
 
                 <div class="about__content">
                     <div class="about__image">
-                        <img src="images/hero/about-image.png" alt="Tentang Alwage Appareal" class="about__img"
+                        <img src="images/hero/about_image.png" alt="Tentang Alwage Appareal" class="about__img"
                             loading="eager">
                     </div>
 
