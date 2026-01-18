@@ -24,6 +24,14 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo/logo-alwage.png">
 
+    <!-- Preload Critical Images for Faster Loading -->
+    <link rel="preload" as="image" href="images/hero/hero-jersey.png" fetchpriority="high">
+    <link rel="preload" as="image" href="images/logo/logo-alwage.png" fetchpriority="high">
+
+    <!-- DNS Prefetch for External Resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +52,8 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#home" class="nav__logo">
-                <img src="images/logo/logo-alwage.png" alt="Alwage Appareal Logo" class="nav__logo-img">
+                <img src="images/logo/logo-alwage.png" alt="Alwage Appareal Logo" class="nav__logo-img" loading="eager"
+                    fetchpriority="high">
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -133,7 +142,8 @@
 
                 <div class="about__content">
                     <div class="about__image">
-                        <img src="images/hero/about_image.png" alt="Tentang Alwage Appareal" class="about__img">
+                        <img src="images/hero/about-image.png" alt="Tentang Alwage Appareal" class="about__img"
+                            loading="eager">
                     </div>
 
                     <div class="about__text">
@@ -184,7 +194,8 @@
                     <!-- Product Card 1 -->
                     <article class="product__card">
                         <div class="product__image">
-                            <img src="images/products/7.jpg" alt="Jersey Futsal Custom" class="product__img">
+                            <img src="images/products/7_result.webp" alt="Jersey Futsal Custom" class="product__img"
+                                loading="lazy" decoding="async">
                             <div class="product__overlay">
                                 <a href="#" class="product__link">Lihat Detail</a>
                             </div>
@@ -200,7 +211,8 @@
                     <!-- Product Card 2 -->
                     <article class="product__card">
                         <div class="product__image">
-                            <img src="images/products/catalog 1.jpg" alt="Jersey Sepakbola Custom" class="product__img">
+                            <img src="images/products/catalog 1_result.webp" alt="Jersey Sepakbola Custom"
+                                class="product__img" loading="lazy" decoding="async">
                             <div class="product__overlay">
                                 <a href="#" class="product__link">Lihat Detail</a>
                             </div>
@@ -216,7 +228,8 @@
                     <!-- Product Card 3 -->
                     <article class="product__card">
                         <div class="product__image">
-                            <img src="images/products/catalog 2.jpg" alt="Jersey Basket Custom" class="product__img">
+                            <img src="images/products/catalog 2_result.webp" alt="Jersey Basket Custom"
+                                class="product__img" loading="lazy" decoding="async">
                             <div class="product__overlay">
                                 <a href="#" class="product__link">Lihat Detail</a>
                             </div>
@@ -232,7 +245,8 @@
                     <!-- Product Card 4 -->
                     <article class="product__card">
                         <div class="product__image">
-                            <img src="images/products/catalog 4.jpg" alt="Jersey Komunitas Custom" class="product__img">
+                            <img src="images/products/catalog 4_result.webp" alt="Jersey Komunitas Custom"
+                                class="product__img" loading="lazy" decoding="async">
                             <div class="product__overlay">
                                 <a href="#" class="product__link">Lihat Detail</a>
                             </div>
@@ -415,9 +429,10 @@
                 <div class="gallery__grid">
                     <!-- Gallery Item 1 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/1. PNM PLG.jpg" alt="Custom Jersey Portfolio 1" class="gallery__img">
+                        <img src="images/gallery/1. PNM PLG_result.webp" alt="Custom Jersey Portfolio 1"
+                            class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/1. PNM PLG.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/1. PNM PLG_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -425,10 +440,11 @@
 
                     <!-- Gallery Item 2 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/2. FUN BALL POLSRI HOME 1.jpg" alt="Custom Jersey Portfolio 2"
+                        <img src="images/gallery/2. FUN BALL POLSRI HOME 1_result.webp" alt="Custom Jersey Portfolio 2"
                             class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/2. FUN BALL POLSRI HOME 1.jpg">
+                            <button class="gallery__btn"
+                                data-img="images/gallery/2. FUN BALL POLSRI HOME 1_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -436,10 +452,10 @@
 
                     <!-- Gallery Item 3 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/4. KSATRIA POLICE (2).jpg" alt="Custom Jersey Portfolio 3"
+                        <img src="images/gallery/4. KSATRIA POLICE (2)_result.webp" alt="Custom Jersey Portfolio 3"
                             class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/4. KSATRIA POLICE (2).jpg">
+                            <button class="gallery__btn" data-img="images/gallery/4. KSATRIA POLICE (2)_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -447,10 +463,10 @@
 
                     <!-- Gallery Item 4 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/6. BPS PALEMBANG.jpg" alt="Custom Jersey Portfolio 4"
+                        <img src="images/gallery/6. BPS PALEMBANG_result.webp" alt="Custom Jersey Portfolio 4"
                             class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/6. BPS PALEMBANG.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/6. BPS PALEMBANG_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -458,10 +474,10 @@
 
                     <!-- Gallery Item 5 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/8.PERTAMINA BDMNTN.jpg" alt="Custom Jersey Portfolio 5"
+                        <img src="images/gallery/8.PERTAMINA BDMNTN_result.webp" alt="Custom Jersey Portfolio 5"
                             class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/8. PERTAMINA BDMNTN.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/8. PERTAMINA BDMNTN_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -469,10 +485,10 @@
 
                     <!-- Gallery Item 6 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/Access 3rd fix 1.jpg" alt="Custom Jersey Portfolio 6"
+                        <img src="images/gallery/Access 3rd fix 1_result.webp" alt="Custom Jersey Portfolio 6"
                             class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/Access 3rd fix 1.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/Access 3rd fix 1_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -480,10 +496,10 @@
 
                     <!-- Gallery Item 7 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/Access 3rd fix 2.jpg" alt="Custom Jersey Portfolio 6"
+                        <img src="images/gallery/Access 3rd fix 2_result.webp" alt="Custom Jersey Portfolio 6"
                             class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/Access 3rd fix 2.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/Access 3rd fix 2_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -491,9 +507,10 @@
 
                     <!-- Gallery Item 8 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/11.PERSEBA.jpg" alt="Custom Jersey Portfolio 6" class="gallery__img">
+                        <img src="images/gallery/11.PERSEBA_result.webp" alt="Custom Jersey Portfolio 6"
+                            class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/11.PERSEBA.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/11.PERSEBA_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -501,9 +518,10 @@
 
                     <!-- Gallery Item 9 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/12.PERSEBA.jpg" alt="Custom Jersey Portfolio 6" class="gallery__img">
+                        <img src="images/gallery/12.PERSEBA_result.webp" alt="Custom Jersey Portfolio 6"
+                            class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/12.PERSEBA.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/12.PERSEBA_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -511,9 +529,10 @@
 
                     <!-- Gallery Item 10 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/9. SMANDAMS.jpg" alt="Custom Jersey Portfolio 6" class="gallery__img">
+                        <img src="images/gallery/9. SMANDAMS_result.webp" alt="Custom Jersey Portfolio 6"
+                            class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/9. SMANDAMS.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/9. SMANDAMS_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -521,9 +540,10 @@
 
                     <!-- Gallery Item 11 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/10. SMANDAMS.jpg" alt="Custom Jersey Portfolio 6" class="gallery__img">
+                        <img src="images/gallery/10. SMANDAMS_result.webp" alt="Custom Jersey Portfolio 6"
+                            class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/10. SMANDAMS.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/10. SMANDAMS_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
@@ -531,9 +551,10 @@
 
                     <!-- Gallery Item 12 -->
                     <div class="gallery__item">
-                        <img src="images/gallery/7.PERTAMINA.jpg" alt="Custom Jersey Portfolio 6" class="gallery__img">
+                        <img src="images/gallery/7.PERTAMINA_result.webp" alt="Custom Jersey Portfolio 6"
+                            class="gallery__img">
                         <div class="gallery__overlay">
-                            <button class="gallery__btn" data-img="images/gallery/7.PERTAMINA.jpg">
+                            <button class="gallery__btn" data-img="images/gallery/7.PERTAMINA_result.webp">
                                 <i class="fa-solid fa-expand"></i>
                             </button>
                         </div>
